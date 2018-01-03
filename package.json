@@ -1,0 +1,35 @@
+{
+  "name": "browser-drivers",
+  "version": "0.1.0",
+  "description": "Package for resolving appropriate browser driver version",
+  "main": "index.js",
+  "scripts": {
+    "assemble": "tsc",
+    "test": "npm run assemble && cd spec && rimraf node_modules/browser-installations/ && npm i && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petrkoutnycz/browser-drivers.git"
+  },
+  "keywords": [
+    "browser",
+    "selenium-driver",
+    "browser-driver",
+    "chrome-driver"
+  ],
+  "author": "Petr Koutny <me@petrkoutny.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petrkoutnycz/browser-drivers/issues"
+  },
+  "homepage": "https://github.com/petrkoutnycz/browser-drivers#readme",
+  "devDependencies": {
+    "@types/node": "~8.5.2",
+    "rimraf": "~2.5.0",
+    "typescript": "~2.6.0"
+  },
+  "dependencies": {
+    "@types/lodash": "~4.14.0",
+    "lodash": "~4.17.0"
+  }
+}

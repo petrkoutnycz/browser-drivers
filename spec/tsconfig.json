@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noEmitOnError": true,
+        "lib": [
+            "es6"
+        ],
+        "types": [
+            "node",
+            "jasmine"
+        ],
+        "rootDir": "./src",
+        "outDir": "./.tmp"
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "target": "es6",
+        "noEmitOnError": true,
+        "lib": [
+            "es6"
+        ],
+        "types": [
+            "node",
+            "lodash"
+        ],
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": [
+        "./src/**/*.ts"
+    ]
+}

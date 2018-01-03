@@ -1,0 +1,17 @@
+{
+  "name": "spec",
+  "version": "1.0.0",
+  "description": "Spec folder for the project",
+  "scripts": {
+    "assemble": "tsc",
+    "test": "rimraf .tmp && npm run assemble && jasmine JASMINE_CONFIG_PATH=jasmine.json"
+  },
+  "author": "Petr Koutny <me@petrkoutny.cz>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "~2.8.0",
+    "browser-drivers": "../",
+    "jasmine": "~2.8.0",
+    "mockery": "~2.1.0"
+  }
+}
