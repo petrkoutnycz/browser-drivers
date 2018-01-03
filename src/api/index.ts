@@ -1,3 +1,5 @@
 export {BrowserTypes} from "./browser-types";
-export {IDriverVersion} from "./driver-version";
-export {IMatrixLine} from "./matrix-line";
+export {ICompatibilityMatrixFactory} from "./compatibility-matrix-factory";
+export {ICompatibilityMatrix} from "./compatibility-matrix";
+export {ICompatibilityMatrixLine} from "./compatibility-matrix-line";
+export {IBrowserDriverVersionProvider} from "./browser-driver-version-provider";

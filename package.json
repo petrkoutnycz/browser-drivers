@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/petrkoutnycz/browser-drivers#readme",
   "devDependencies": {
+    "@types/lodash": "~4.14.0",
     "@types/node": "~8.5.2",
     "rimraf": "~2.5.0",
     "typescript": "~2.6.0"
   },
   "dependencies": {
-    "@types/lodash": "~4.14.0",
     "lodash": "~4.17.0"
   }
 }
