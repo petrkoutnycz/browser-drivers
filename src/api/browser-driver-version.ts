@@ -7,11 +7,13 @@ export interface IBrowserDriverVersion {
 
 export class BrowserDriverVersion implements IBrowserDriverVersion {
     constructor(
-        public readonly version: string,
         public readonly major: number,
         public readonly minor: number) {
-
     }
+
+    public get version(): string{
+        return `${this.major}.${this.minor}`;
+    };
 
     public compare = (b: IBrowserDriverVersion): number => {
         if (this.major < b.major) {
@@ -28,5 +30,9 @@ export class BrowserDriverVersion implements IBrowserDriverVersion {
         }
 
         return 0;
+    };
+
+    public toString = (): string => {
+        return this.version;
     };
 };
