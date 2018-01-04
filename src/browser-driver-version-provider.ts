@@ -1,10 +1,10 @@
 import * as _ from "lodash";
-import {BrowserTypes, IBrowserDriverVersionProvider} from "./api";
+import {BrowserTypes, IBrowserDriverVersion, IBrowserDriverVersionProvider} from "./api";
 import {compatibilityMatrixFactory} from "./compatibility-matrix-factory";
 
 /** @inheritdoc */
 export const browserDriverVersionProvider: IBrowserDriverVersionProvider = 
-    (browser: BrowserTypes, browserVersion: number, preferLatest: boolean): string => {
+    (browser: BrowserTypes, browserVersion: number, preferLatest: boolean = true): IBrowserDriverVersion => {
 
         const matrix = compatibilityMatrixFactory(browser);
         const relevantLines = _.filter(matrix.lines, line => {
@@ -14,6 +14,9 @@ export const browserDriverVersionProvider: IBrowserDriverVersionProvider =
 
             return browserVersion >= line.minBrowserVersion && browserVersion <= line.maxBrowserVersion;
         });
+
+        // make sure it is properly sorted by version
+        relevantLines.sort((a, b) => a.compare(b));
 
         if (_.isEmpty(relevantLines)) {
             return undefined;

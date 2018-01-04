@@ -1,4 +1,5 @@
 import {BrowserTypes} from "./browser-types";
+import {IBrowserDriverVersion} from "./browser-driver-version";
 
 /**
  * Browser driver version provider
@@ -10,5 +11,5 @@ export interface IBrowserDriverVersionProvider {
      * @param {number} browserMajorVersion Browser major version
      * @param {boolean} preferLatest Flag indicating whether the latest applicable driver should be returned
      */
-    (browser: BrowserTypes, browserMajorVersion: number, preferLatest: boolean): string;
+    (browser: BrowserTypes, browserMajorVersion: number, preferLatest: boolean): IBrowserDriverVersion;
 };
