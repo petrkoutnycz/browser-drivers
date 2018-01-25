@@ -15,12 +15,12 @@ export const browserDriverVersionProvider: IBrowserDriverVersionProvider =
             return browserVersion >= line.minBrowserVersion && browserVersion <= line.maxBrowserVersion;
         });
 
-        // make sure it is properly sorted by version
-        relevantLines.sort((a, b) => a.compare(b));
-
         if (_.isEmpty(relevantLines)) {
             return undefined;
         }
+
+        // make sure it is properly sorted by version
+        relevantLines.sort((a, b) => a.compare(b));
 
         if (preferLatest) {
             return _.last(relevantLines).driverVersion;
