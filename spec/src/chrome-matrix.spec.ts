@@ -9,14 +9,14 @@ describe("chrome compatibility matrix >", () => {
             });
     };
 
-    createIt("chrome", 66, true, "2.36");
-    createIt("chrome", 66, false, "2.36");
-    createIt("chrome", 65, true, "2.36");
-    createIt("chrome", 65, false, "2.35");
-    createIt("chrome", 62, true, "2.34");
-    createIt("chrome", 62, false, "2.33");
-    createIt("chrome", 53, true, "2.26");
-    createIt("chrome", 53, false, "2.25");
+    createIt("chrome", 66, true, "2.37");
+    createIt("chrome", 66, false, "2.37");
+    createIt("chrome", 65, true, "2.37");
+    createIt("chrome", 65, false, "2.36");
+    createIt("chrome", 64, true, "2.37");
+    createIt("chrome", 64, false, "2.35");
+    createIt("chrome", 63, true, "2.36");
+    createIt("chrome", 63, false, "2.34");
 
     it("returns undefined for non-existing matrix line", () => {
         const chromeDriver = browserDriverVersionProvider("chrome", 1, false);

@@ -6,8 +6,9 @@ import {ICompatibilityMatrix, CompatibilityMatrixLine, BrowserDriverVersion} fro
  */
 export const chromeCompatibilityMatrix: ICompatibilityMatrix = {
     lines: [
-        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 36), 65, 66),
-        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 35), 63, 65),
+        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 37), 64, 66),
+        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 36), 63, 65),
+        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 35), 62, 64),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 34), 61, 63),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 33), 60, 62),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 32), 59, 61),
