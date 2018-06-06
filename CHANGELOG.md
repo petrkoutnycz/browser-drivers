@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.5
+*   Supports Chrome driver 2.39
+
 ## 1.0.4
 *   Supports Chrome driver 2.38
 

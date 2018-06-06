@@ -9,9 +9,11 @@ describe("chrome compatibility matrix >", () => {
             });
     };
 
-    createIt("chrome", 67, true, "2.38");
+    createIt("chrome", 68, true, "2.39");
+    createIt("chrome", 68, false, "2.39");
+    createIt("chrome", 67, true, "2.39");
     createIt("chrome", 67, false, "2.38");
-    createIt("chrome", 66, true, "2.38");
+    createIt("chrome", 66, true, "2.39");
     createIt("chrome", 66, false, "2.37");
     createIt("chrome", 65, true, "2.38");
     createIt("chrome", 65, false, "2.36");
