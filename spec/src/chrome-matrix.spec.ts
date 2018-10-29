@@ -9,9 +9,13 @@ describe("chrome compatibility matrix >", () => {
             });
     };
 
-    createIt("chrome", 69, true, "2.41");
+    createIt("chrome", 71, true, "2.43");
+    createIt("chrome", 71, false, "2.43");
+    createIt("chrome", 70, true, "2.43");
+    createIt("chrome", 70, false, "2.42");
+    createIt("chrome", 69, true, "2.43");
     createIt("chrome", 69, false, "2.41");
-    createIt("chrome", 68, true, "2.41");
+    createIt("chrome", 68, true, "2.42");
     createIt("chrome", 68, false, "2.39");
     createIt("chrome", 67, true, "2.41");
     createIt("chrome", 67, false, "2.38");
