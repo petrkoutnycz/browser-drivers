@@ -1,6 +1,6 @@
 {
   "name": "browser-drivers",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Package for resolving appropriate browser driver version",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -28,7 +28,7 @@
     "@types/lodash": "~4.14.0",
     "@types/node": "~8.5.2",
     "rimraf": "~2.5.0",
-    "typescript": "~2.6.0"
+    "typescript": "~2.8.0"
   },
   "dependencies": {
     "lodash": "~4.17.0"

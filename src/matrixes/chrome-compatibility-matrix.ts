@@ -2,10 +2,11 @@ import {ICompatibilityMatrix, CompatibilityMatrixLine, BrowserDriverVersion} fro
 
 /**
  * Compatibility matrix for Chrome drivers
- * @example Information source: https://chromedriver.storage.googleapis.com/2.34/notes.txt
+ * @example Information source: https://chromedriver.storage.googleapis.com/2.44/notes.txt
  */
 export const chromeCompatibilityMatrix: ICompatibilityMatrix = {
     lines: [
+        new CompatibilityMatrixLine(new BrowserDriverVersion(2, 44), 69, 71),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 43), 69, 71),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 42), 68, 70),
         new CompatibilityMatrixLine(new BrowserDriverVersion(2, 41), 67, 69),
