@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.12
+*   New Chrome versions now contain fixed whole version number
+
 ## 1.0.11
 *   Supports Chrome driver 73-77
 
